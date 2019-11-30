@@ -17,10 +17,16 @@ body {
     padding-left: 3%;
 }
 
+
+//ここから不安！！！！！！！！！！！！！！！！！！！！
+
 h1 {
     font-size: 24px;
     display: inline;
 }
+
+//ここまで不安！！！！！！！！！！！！！！！！！！！！
+
 
 h2 {
     font-size: 36px;
@@ -111,6 +117,9 @@ select {
     height: 30px;
 }
 
+//ここから不安！！！！！！！！！！！！！！！！！！！！
+
+
 #header_menu {
     width: 57%;
     padding-top: 17px;
@@ -133,5 +142,8 @@ select {
 h1 a {
     color: #eeeeee;
 }
+
+//ここまで不安！！！！！！！！！！！！！！！！！！！！
+
 
 
