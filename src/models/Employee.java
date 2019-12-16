@@ -58,9 +58,6 @@ public class Employee {
     @Column(name = "delete_flag", nullable = false)
     private Integer delete_flag;
 
-    @Column(name = "kidoku_flag", nullable = false)
-    private Integer kidoku_flag;
-
     public Integer getId() {
         return id;
     }
@@ -124,11 +121,5 @@ public class Employee {
     public void setDelete_flag(Integer delete_flag) {
         this.delete_flag = delete_flag;
     }
-    public Integer getKidoku_flag() {
-        return kidoku_flag;
-    }
 
-    public void setKidoku_flag(Integer kidoku_flag) {
-        this.kidoku_flag = kidoku_flag;
-    }
 }

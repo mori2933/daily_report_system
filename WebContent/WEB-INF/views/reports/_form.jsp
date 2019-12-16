@@ -22,6 +22,11 @@
 <input type="text" name="title" value="${report.title}" />
 <br /><br />
 
+<label for="kidoku_flag">確認状況</label><br />
+<input type="checkbox" name="kidoku_flag" value=1 <c:if test="${report.kidoku_flag ==1}">checked</c:if>/>
+<br /><br />
+
+
 <label for="content">内容</label><br />
 <textarea name="content" rows="10" cols="50">${report.content}</textarea>
 <br /><br />

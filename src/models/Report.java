@@ -61,6 +61,14 @@ public class Report {
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
 
+    //ここから追加
+
+    @Column(name = "kidoku_flag", nullable = false)
+    private Integer kidoku_flag;
+
+    //ここまで追加
+
+
     public Integer getId() {
         return id;
     }
@@ -116,4 +124,18 @@ public class Report {
     public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
     }
+
+    //ここから追加
+
+    public Integer getKidoku_flag() {
+        return kidoku_flag;
+    }
+
+    public void setKidoku_flag(Integer kidoku_flag) {
+        this.kidoku_flag = kidoku_flag;
+    }
+
+    //ここまで追加
+
+
 }

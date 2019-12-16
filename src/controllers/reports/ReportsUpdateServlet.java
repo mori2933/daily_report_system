@@ -47,6 +47,14 @@ public class ReportsUpdateServlet extends HttpServlet {
             r.setContent(request.getParameter("content"));
             r.setUpdated_at(new Timestamp(System.currentTimeMillis()));
 
+            if (request.getParameter("kidoku_flag")!=null) {
+                r.setKidoku_flag(1);
+            } else {
+                r.setKidoku_flag(0);
+            }
+
+            //r.setKidoku_flag(Integer.parseInt(request.getParameter("kidoku_flag")));
+
             List<String> errors = ReportValidator.validate(r);
             if(errors.size() > 0) {
                 em.close();
